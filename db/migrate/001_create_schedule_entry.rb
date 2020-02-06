@@ -1,4 +1,4 @@
-class CreateScheduleEntry < ActiveRecord::Migration
+class CreateScheduleEntry < ActiveRecord::Migration[5.0]
   def self.up
     create_table :schedule_entries do |t|
       t.column :user_id, :integer, :default => 0, :null => false
